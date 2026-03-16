@@ -1,0 +1,7 @@
+- Use Next.js 14 App Router only (no pages/ directory)
+- TypeScript strict mode always
+- Tailwind utility classes only (no inline styles)
+- No class-variance-authority
+- All components must be in src/components/
+- Use lucide-react for all icons
+- Brand colors are in tailwind.config.ts — always use utility classes like bg-primary, text-accent, border-border. Never hardcode hex values in components.
