@@ -46,6 +46,7 @@ export default function Home() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+  const [submitError, setSubmitError] = useState<string>("");
 
   const handleFormChange = (
     e: React.ChangeEvent<
@@ -80,6 +81,7 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitStatus("idle");
+    setSubmitError("");
     if (!validateForm()) return;
     if (formData.website) return; // honeypot
     try {
@@ -88,6 +90,7 @@ export default function Home() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      const data = await res.json().catch(() => ({}));
       if (res.ok) {
         setSubmitStatus("success");
         setFormData({
@@ -103,9 +106,11 @@ export default function Home() {
         });
       } else {
         setSubmitStatus("error");
+        setSubmitError(data.error || "Something went wrong. Please try again.");
       }
     } catch {
       setSubmitStatus("error");
+      setSubmitError("Something went wrong. Please try again or email us at contact@benktechlabs.com.");
     }
   };
 
@@ -681,8 +686,7 @@ export default function Home() {
             )}
             {submitStatus === "error" && (
               <p className="text-center text-red-500">
-                Something went wrong. Please try again or email us at
-                contact@benktechlabs.com.
+                {submitError || "Something went wrong. Please try again or email us at contact@benktechlabs.com."}
               </p>
             )}
             <button

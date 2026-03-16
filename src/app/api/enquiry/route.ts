@@ -5,7 +5,7 @@ import {
   buildEnquiryAutoReplyHtml,
 } from "@/lib/email-templates/enquiry";
 
-const EMAIL_CEO = "contact@benktechlabs.com";
+const EMAIL_CEO = "ceo@benktechlabs.com";
 const EMAIL_FROM =
   process.env.RESEND_FROM ?? "noreply@benktechlabs.com";
 

@@ -21,7 +21,7 @@ const companyLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms", href: "/terms" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/#enquiry-form" },
 ];
 
 const socialLinks = [
