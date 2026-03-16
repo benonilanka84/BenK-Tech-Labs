@@ -99,7 +99,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact, location, Udyam badge */}
+          {/* Column 4: Contact, location, MSME badge */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
               Contact
@@ -116,7 +116,7 @@ export default function Footer() {
               </p>
               <div className="pt-2">
                 <span className="inline-flex items-center rounded-md border border-white/30 bg-white/10 px-2 py-1 text-xs font-medium text-white">
-                  Udyam Registered
+                  MSME Registered
                 </span>
               </div>
             </div>
