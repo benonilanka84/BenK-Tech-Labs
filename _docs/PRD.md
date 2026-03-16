@@ -5,7 +5,7 @@
 - Name: BenK Tech Labs
 - Tagline: Empowering Businesses with Smart Technology
 - Location: Vijayawada, Andhra Pradesh, India
-- Email: ceo@benktechlabs.com
+- Email: contact@benktechlabs.com
 - Domain: benktechlabs.com
 - Udyam Registered: Yes
 
@@ -20,7 +20,7 @@
 - Language: TypeScript (strict mode)
 - Styling: Tailwind CSS v3
 - Deployment: Vercel
-- Email: Resend API (ceo@benktechlabs.com)
+- Email: Resend API (contact@benktechlabs.com)
 - Blog: MDX + gray-matter
 - Icons: Lucide React
 - Animations: Framer Motion
@@ -76,7 +76,7 @@
 ## Form Backend
 - API Route: /api/enquiry (POST)
 - Email via: Resend SDK
-- To: ceo@benktechlabs.com
+- To: contact@benktechlabs.com
 - Spam: honeypot field check
 - Optional: Google Sheets webhook
 

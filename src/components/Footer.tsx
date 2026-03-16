@@ -106,10 +106,10 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 text-sm text-white/80">
               <a
-                href="mailto:ceo@benktechlabs.com"
+                href="mailto:contact@benktechlabs.com"
                 className="block transition-colors hover:text-white"
               >
-                ceo@benktechlabs.com
+                contact@benktechlabs.com
               </a>
               <p className="max-w-[200px]">
                 Vijayawada, Andhra Pradesh, India
