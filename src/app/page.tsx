@@ -682,7 +682,7 @@ export default function Home() {
             {submitStatus === "error" && (
               <p className="text-center text-red-500">
                 Something went wrong. Please try again or email us at
-                ceo@benktechlabs.com.
+                contact@benktechlabs.com.
               </p>
             )}
             <button
