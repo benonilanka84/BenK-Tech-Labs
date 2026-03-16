@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 
+const SITE_URL = "https://benktechlabs.com";
+
 export const metadata: Metadata = {
   title: "Terms & Conditions | BenK Tech Labs",
   description:
-    "Terms and Conditions governing the use of BenK Tech Labs services and website.",
+    "Terms & Conditions for BenK Tech Labs services — scope, payment, IP, liability, and governing law. Vijayawada-based digital agency, India.",
+  openGraph: {
+    title: "Terms & Conditions | BenK Tech Labs",
+    description:
+      "Terms & Conditions for BenK Tech Labs services — scope, payment, IP, liability, and governing law. Vijayawada-based digital agency, India.",
+    type: "website",
+    url: `${SITE_URL}/terms`,
+    siteName: "BenK Tech Labs",
+  },
 };
 
 const LAST_UPDATED = "2025-03-16";

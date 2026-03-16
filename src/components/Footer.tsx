@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Linkedin,
   Instagram,
@@ -37,9 +38,13 @@ export default function Footer() {
           {/* Column 1: Logo, tagline, social */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/20 text-lg font-bold text-white">
-                BK
-              </span>
+              <Image
+                src="/logo.png"
+                alt="BenK Tech Labs Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <span className="font-semibold text-white">BenK Tech Labs</span>
             </Link>
             <p className="max-w-xs text-sm text-white/90">

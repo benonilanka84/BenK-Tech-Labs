@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -41,9 +42,13 @@ export default function Navbar() {
             className="flex items-center gap-2 text-primary"
             onClick={handleLinkClick}
           >
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary text-lg font-bold text-white">
-              BK
-            </span>
+            <Image
+              src="/logo.png"
+              alt="BenK Tech Labs Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
             <span className="font-semibold text-primary">BenK Tech Labs</span>
           </Link>
 

@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 
+const SITE_URL = "https://benktechlabs.com";
+
 export const metadata: Metadata = {
   title: "Privacy Policy | BenK Tech Labs",
   description:
-    "Privacy Policy for BenK Tech Labs — compliant with India's Digital Personal Data Protection Act (DPDPA) 2023.",
+    "Privacy Policy for BenK Tech Labs — data protection, DPDPA 2023 compliance. How we collect, use, and protect your data. Vijayawada, India.",
+  openGraph: {
+    title: "Privacy Policy | BenK Tech Labs",
+    description:
+      "Privacy Policy for BenK Tech Labs — data protection, DPDPA 2023 compliance. How we collect, use, and protect your data. Vijayawada, India.",
+    type: "website",
+    url: `${SITE_URL}/privacy-policy`,
+    siteName: "BenK Tech Labs",
+  },
 };
 
 const LAST_UPDATED = "2025-03-16";

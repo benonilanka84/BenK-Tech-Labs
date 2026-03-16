@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
 import type { BlogPost } from "@/lib/blog";
+
+const SITE_URL = "https://benktechlabs.com";
+
+export const metadata: Metadata = {
+  title: "Blog — Web Dev, AI & Marketing Insights | BenK Tech Labs",
+  description:
+    "Web dev, AI automation & digital marketing insights for Indian businesses. Tips, guides, and growth strategies from BenK Tech Labs, Vijayawada.",
+  openGraph: {
+    title: "Blog — Web Dev, AI & Marketing Insights | BenK Tech Labs",
+    description:
+      "Web dev, AI automation & digital marketing insights for Indian businesses. Tips, guides, and growth strategies from BenK Tech Labs, Vijayawada.",
+    type: "website",
+    url: `${SITE_URL}/blog`,
+    siteName: "BenK Tech Labs",
+  },
+};
 
 function PostCard({ post }: { post: BlogPost }) {
   const { frontmatter, slug, readTime } = post;
@@ -18,7 +35,7 @@ function PostCard({ post }: { post: BlogPost }) {
         {coverImage ? (
           <Image
             src={coverImage}
-            alt={title}
+            alt={`Cover image for "${title}" — BenK Tech Labs blog post`}
             fill
             className="object-cover transition-transform group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

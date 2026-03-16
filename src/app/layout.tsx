@@ -14,10 +14,38 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
+const SITE_URL = "https://benktechlabs.com";
+
 export const metadata: Metadata = {
-  title: "BenK Tech Labs | Digital Services | Vijayawada, India",
+  metadataBase: new URL(SITE_URL),
+  title: "BenK Tech Labs | Web, App & AI Development — Vijayawada",
   description:
-    "Full Stack Web Development, Mobile Apps, AI Automation & Digital Marketing. Empowering businesses with smart technology in Vijayawada, Andhra Pradesh.",
+    "Web development company Vijayawada, app development & AI automation Andhra Pradesh. Full stack web apps, mobile apps, digital marketing — BenK Tech Labs.",
+  openGraph: {
+    title: "BenK Tech Labs | Web, App & AI Development — Vijayawada",
+    description:
+      "Web development company Vijayawada, app development & AI automation Andhra Pradesh. Full stack web apps, mobile apps, digital marketing.",
+    type: "website",
+    url: SITE_URL,
+    siteName: "BenK Tech Labs",
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "BenK Tech Labs",
+  description:
+    "Full stack web development, app development, AI automation, and digital marketing company in Vijayawada, Andhra Pradesh, India.",
+  url: SITE_URL,
+  email: "contact@benktechlabs.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Vijayawada",
+    addressRegion: "Andhra Pradesh",
+    addressCountry: "IN",
+  },
+  sameAs: [] as string[],
 };
 
 export default function RootLayout({
@@ -30,6 +58,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PlayStoreBadge from "@/components/PlayStoreBadge";
 
+const SITE_URL = "https://benktechlabs.com";
+
 export const metadata: Metadata = {
   title: "Our Work & Portfolio | BenK Tech Labs",
   description:
-    "Real products built by BenK Tech Labs — from Christian social platforms to AI automation. Based in Vijayawada, Andhra Pradesh.",
+    "Our portfolio: The Believerse social platform, web dev, app dev & AI automation. BenK Tech Labs — Vijayawada, Andhra Pradesh.",
+  openGraph: {
+    title: "Our Work & Portfolio | BenK Tech Labs",
+    description:
+      "Our portfolio: The Believerse social platform, web dev, app dev & AI automation. BenK Tech Labs — Vijayawada, Andhra Pradesh.",
+    type: "website",
+    url: `${SITE_URL}/portfolio`,
+    siteName: "BenK Tech Labs",
+  },
 };
 
 const placeholderCards = [

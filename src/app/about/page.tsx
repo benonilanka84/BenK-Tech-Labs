@@ -9,10 +9,20 @@ import {
   Check,
 } from "lucide-react";
 
+const SITE_URL = "https://benktechlabs.com";
+
 export const metadata: Metadata = {
   title: "About Us | BenK Tech Labs — Vijayawada Digital Agency",
   description:
-    "Learn about BenK Tech Labs — a MSME-registered digital services company in Vijayawada, Andhra Pradesh, building web apps, mobile apps, and AI solutions for Indian businesses.",
+    "Udyam-registered/MSME-registered digital agency in Vijayawada. Web apps, mobile apps & AI solutions for Indian businesses. Meet our team.",
+  openGraph: {
+    title: "About Us | BenK Tech Labs — Vijayawada Digital Agency",
+    description:
+      "Udyam-registered/MSME-registered digital agency in Vijayawada. Web apps, mobile apps & AI solutions for Indian businesses. Meet our team.",
+    type: "website",
+    url: `${SITE_URL}/about`,
+    siteName: "BenK Tech Labs",
+  },
 };
 
 const missionValues = [

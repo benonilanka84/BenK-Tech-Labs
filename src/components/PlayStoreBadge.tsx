@@ -13,7 +13,7 @@ export default function PlayStoreBadge() {
       >
         <Image
           src="/badges/google-play-badge.png"
-          alt="Get it on Google Play"
+          alt="Download The Believerse app on Google Play — BenK Tech Labs"
           width={160}
           height={48}
         />
@@ -29,7 +29,7 @@ export default function PlayStoreBadge() {
     >
       <Image
         src="/badges/google-play-badge.png"
-        alt="Get it on Google Play"
+        alt="Download The Believerse app on Google Play — BenK Tech Labs"
         width={160}
         height={48}
       />

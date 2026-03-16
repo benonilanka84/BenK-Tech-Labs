@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://benktechlabs.com
+
+# Sitemaps
+Sitemap: https://benktechlabs.com/sitemap.xml

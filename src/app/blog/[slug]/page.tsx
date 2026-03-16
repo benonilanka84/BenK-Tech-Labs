@@ -13,6 +13,8 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+const SITE_URL = "https://benktechlabs.com";
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
@@ -21,14 +23,18 @@ export async function generateMetadata({
   if (!post) return { title: "Post Not Found" };
 
   const { title, excerpt, author, date } = post.frontmatter;
+  const description =
+    excerpt.length > 160 ? excerpt.slice(0, 157) + "..." : excerpt;
   return {
     title: `${title} | BenK Tech Labs Blog`,
-    description: excerpt,
+    description,
     authors: [{ name: author }],
     openGraph: {
-      title,
-      description: excerpt,
+      title: `${title} | BenK Tech Labs Blog`,
+      description,
       type: "article",
+      url: `${SITE_URL}/blog/${slug}`,
+      siteName: "BenK Tech Labs",
       publishedTime: date,
       authors: [author],
     },
