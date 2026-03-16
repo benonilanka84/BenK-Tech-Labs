@@ -21,10 +21,18 @@ module.exports = {
   exclude: ["/api/*", "/opengraph-image"],
   additionalPaths: async () => {
     const slugs = getBlogSlugs();
-    return slugs.map((slug) => ({
+    const blogPaths = slugs.map((slug) => ({
       loc: `/blog/${slug}`,
       changefreq: "weekly",
       priority: 0.8,
     }));
+    const staticPaths = [
+      {
+        loc: "/faq",
+        changefreq: "monthly",
+        priority: 0.8,
+      },
+    ];
+    return [...staticPaths, ...blogPaths];
   },
 };
