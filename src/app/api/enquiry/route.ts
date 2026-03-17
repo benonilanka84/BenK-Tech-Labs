@@ -9,6 +9,44 @@ const EMAIL_CEO = "ceo@benktechlabs.com";
 const EMAIL_FROM =
   process.env.RESEND_FROM ?? "noreply@benktechlabs.com";
 
+const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+const rateLimitMap = new Map<
+  string,
+  { count: number; resetTime: number }
+>();
+
+function getClientIp(request: NextRequest): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    return forwarded.split(",")[0].trim();
+  }
+  return (request as unknown as { ip?: string }).ip ?? "unknown";
+}
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+
+  if (!entry) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    return true;
+  }
+
+  if (now > entry.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    return true;
+  }
+
+  if (entry.count >= RATE_LIMIT_MAX) {
+    return false;
+  }
+
+  entry.count++;
+  return true;
+}
+
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -20,6 +58,14 @@ function isTenDigitPhone(phone: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
+    const ip = getClientIp(request);
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { success: false, error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
 
     const website = body.website ?? "";
