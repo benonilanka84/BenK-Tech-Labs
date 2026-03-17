@@ -56,9 +56,9 @@ export default function PortfolioPage() {
       {/* THE BELIEVERSE — Featured case study card */}
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <article className="overflow-hidden rounded-xl border-l-4 border-[#4F6FD4] bg-white shadow-md">
+          <article className="overflow-hidden rounded-xl border-l-4 border-teal bg-white shadow-md">
             <div className="p-6 md:p-8">
-              <span className="mb-3 inline-block rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold text-accent">
+              <span className="mb-3 inline-block rounded-full bg-teal/15 px-3 py-1 text-xs font-semibold text-teal">
                 Full Stack Web Development
               </span>
               <h2 className="text-2xl font-bold text-primary md:text-3xl">

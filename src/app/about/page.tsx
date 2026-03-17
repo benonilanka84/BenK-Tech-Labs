@@ -134,7 +134,7 @@ export default function AboutPage() {
       </section>
 
       {/* CREDENTIALS */}
-      <section className="bg-surface px-4 py-20">
+      <section className="bg-white px-4 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <div
             className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-white"

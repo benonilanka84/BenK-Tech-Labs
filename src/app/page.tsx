@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-primary to-accent px-4 py-16 text-center">
+      <section className="relative flex min-h-[85vh] flex-col items-center justify-center bg-gradient-to-b from-primary to-accent px-4 py-12 text-center">
         <h1 className="sr-only">
           Digital Services Company in Vijayawada | Web, App & AI Solutions
         </h1>
@@ -189,14 +189,14 @@ export default function Home() {
               View Our Work
             </Link>
           </motion.div>
-          <motion.div
+            <motion.div
             custom={3}
             variants={heroVariants}
             initial="hidden"
             animate="visible"
             className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-white"
           >
-            <span>✓ MSME Registered</span>
+            <span className="rounded-md bg-teal-600 px-2.5 py-1 font-medium text-white">✓ MSME Registered</span>
             <span>✓ 5+ Years Experience</span>
             <span>✓ 50+ Projects Delivered</span>
             <span>✓ India-wide Clients</span>
@@ -215,7 +215,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Code2 className="mb-4 h-10 w-10 text-accent" />
+              <Code2 className="mb-4 h-10 w-10 text-[#4F6FD4]" />
               <h3 className="mb-2 font-bold text-primary">
                 Custom Web Applications Built for Scale
               </h3>
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Smartphone className="mb-4 h-10 w-10 text-accent" />
+              <Smartphone className="mb-4 h-10 w-10 text-teal-600" />
               <h3 className="mb-2 font-bold text-primary">
                 Android & iOS Apps That Users Love
               </h3>
@@ -262,7 +262,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Bot className="mb-4 h-10 w-10 text-accent" />
+              <Bot className="mb-4 h-10 w-10 text-[#4F6FD4]" />
               <h3 className="mb-2 font-bold text-primary">
                 Automate Your Business With Intelligent AI
               </h3>
@@ -285,7 +285,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <TrendingUp className="mb-4 h-10 w-10 text-accent" />
+              <TrendingUp className="mb-4 h-10 w-10 text-teal-600" />
               <h3 className="mb-2 font-bold text-primary">
                 More Visibility. More Leads. More Revenue.
               </h3>
@@ -311,14 +311,14 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE US SECTION */}
-      <section className="bg-surface px-4 py-20">
+      <section className="bg-[#EEF2FF] px-4 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
             Why Businesses Choose BenK Tech Labs
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex gap-4">
-              <Layers className="h-8 w-8 flex-shrink-0 text-teal" />
+              <Layers className="h-8 w-8 flex-shrink-0 text-teal-600" />
               <div>
                 <h3 className="font-bold text-primary">
                   End-to-End Capability
@@ -331,7 +331,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Globe className="h-8 w-8 flex-shrink-0 text-teal" />
+              <Globe className="h-8 w-8 flex-shrink-0 text-teal-600" />
               <div>
                 <h3 className="font-bold text-primary">
                   India-Rooted, Global-Ready
@@ -344,7 +344,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Receipt className="h-8 w-8 flex-shrink-0 text-teal" />
+              <Receipt className="h-8 w-8 flex-shrink-0 text-teal-600" />
               <div>
                 <h3 className="font-bold text-primary">
                   Transparent Pricing
@@ -357,7 +357,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Zap className="h-8 w-8 flex-shrink-0 text-teal" />
+              <Zap className="h-8 w-8 flex-shrink-0 text-teal-600" />
               <div>
                 <h3 className="font-bold text-primary">
                   Agile Delivery
@@ -370,7 +370,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4 md:col-span-2 md:justify-center">
-              <Headphones className="h-8 w-8 flex-shrink-0 text-teal" />
+              <Headphones className="h-8 w-8 flex-shrink-0 text-teal-600" />
               <div>
                 <h3 className="font-bold text-primary">
                   Post-Launch Support
@@ -391,8 +391,8 @@ export default function Home() {
           <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
             Our Work
           </h2>
-          <div className="mb-8 rounded-xl border-l-4 border-[#4F6FD4] bg-surface p-6 shadow-sm transition-shadow hover:shadow-md">
-            <span className="mb-2 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+          <div className="mb-8 rounded-xl border-l-4 border-teal bg-surface p-6 shadow-sm transition-shadow hover:shadow-md">
+            <span className="mb-2 inline-block rounded-full bg-teal/10 px-3 py-1 text-xs font-medium text-teal">
               Full Stack Web Development
             </span>
             <h3 className="mb-2 text-xl font-bold text-primary">
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* SOCIAL PROOF SECTION */}
-      <section className="bg-surface px-4 py-20">
+      <section className="bg-[#1E3A8A] px-4 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <div
             ref={statsRef}
@@ -444,10 +444,10 @@ export default function Home() {
                 transition={{ delay: i * 0.1, duration: 0.4 }}
                 className="text-center"
               >
-                <div className="text-3xl font-bold text-primary md:text-4xl">
+                <div className="text-3xl font-bold text-teal-600 md:text-4xl">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted">{stat.label}</div>
+                <div className="text-sm text-white/80">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -455,10 +455,10 @@ export default function Home() {
             {testimonials.map((t) => (
               <div
                 key={t.author}
-                className="rounded-xl border border-border bg-white p-6 shadow-sm"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 shadow-sm"
               >
-                <Quote className="mb-3 h-8 w-8 text-accent" />
-                <p className="mb-4 text-muted">&ldquo;{t.quote}&rdquo;</p>
+                <Quote className="mb-3 h-8 w-8 text-teal-600" />
+                <p className="mb-4 text-white/90">&ldquo;{t.quote}&rdquo;</p>
                 <div className="mb-2 flex gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -467,8 +467,8 @@ export default function Home() {
                     />
                   ))}
                 </div>
-                <p className="text-sm font-medium text-primary">{t.author}</p>
-                <p className="text-xs text-muted">{t.location}</p>
+                <p className="text-sm font-medium text-white">{t.author}</p>
+                <p className="text-xs text-white/70">{t.location}</p>
               </div>
             ))}
           </div>
@@ -478,7 +478,7 @@ export default function Home() {
       {/* ENQUIRY FORM */}
       <section
         id="enquiry-form"
-        className="bg-white px-4 py-20"
+        className="bg-[#EEF2FF] px-4 py-20"
       >
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
@@ -680,7 +680,7 @@ export default function Home() {
               </div>
             </div>
             {submitStatus === "success" && (
-              <p className="text-center text-green-600">
+              <p className="rounded-lg border border-teal-500 bg-teal-50 px-4 py-3 text-center font-medium text-teal-800">
                 Thanks! We&apos;ll get back to you within 24 hours.
               </p>
             )}

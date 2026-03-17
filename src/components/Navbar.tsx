@@ -50,7 +50,12 @@ export default function Navbar() {
               height={40}
               className="object-contain"
             />
-            <span className="font-semibold text-primary">BenK Tech Labs</span>
+            <div className="flex flex-col">
+              <span className="font-semibold text-primary">BenK Tech Labs</span>
+              <span className="hidden text-xs text-muted lg:block">
+                Empowering Businesses with Smart Technology
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav Links - centre/right */}

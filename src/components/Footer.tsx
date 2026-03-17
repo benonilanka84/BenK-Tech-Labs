@@ -39,13 +39,15 @@ export default function Footer() {
           {/* Column 1: Logo, tagline, social */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="BenK Tech Labs Logo"
-                width={40}
-                height={40}
-                className="object-contain"
-              />
+              <div className="inline-flex rounded-lg bg-white p-1.5">
+                <Image
+                  src="/logo.png"
+                  alt="BenK Tech Labs Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
               <span className="font-semibold text-white">BenK Tech Labs</span>
             </Link>
             <p className="max-w-xs text-sm text-white/90">
@@ -121,7 +123,7 @@ export default function Footer() {
                 Vijayawada, Andhra Pradesh, India
               </p>
               <div className="pt-2">
-                <span className="inline-flex items-center rounded-md border border-white/30 bg-white/10 px-2 py-1 text-xs font-medium text-white">
+                <span className="inline-flex items-center rounded-md bg-teal-600 px-2 py-1 text-xs font-medium text-white">
                   MSME Registered
                 </span>
               </div>

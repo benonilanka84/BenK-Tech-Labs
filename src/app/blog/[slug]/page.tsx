@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full bg-surface px-3 py-1 text-xs font-medium text-accent"
+                  className="rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700"
                 >
                   {tag}
                 </span>
@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="prose prose-lg max-w-none prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline">
             <MDXRemote source={content} />
           </div>
-          <div className="mt-12 rounded-lg border-l-4 border-accent bg-surface p-6">
+          <div className="mt-12 rounded-lg border-l-4 border-teal bg-surface p-6">
             <p className="mb-4 font-semibold text-primary">
               Need help with {firstTag}? Let&apos;s talk.
             </p>

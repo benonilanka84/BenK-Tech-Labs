@@ -128,7 +128,7 @@ export default function FaqPage() {
       </section>
 
       {/* FAQ Accordion */}
-      <section className="px-4 py-16">
+      <section className="bg-surface px-4 py-16">
         <div className="mx-auto max-w-3xl">
           <div className="rounded-xl border border-border bg-white p-6 shadow-sm md:p-8">
             {FAQ_ITEMS.map((item, index) => (
@@ -145,7 +145,7 @@ export default function FaqPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-surface px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-lg font-medium text-text">
             Still have questions? We&apos;re happy to help.
