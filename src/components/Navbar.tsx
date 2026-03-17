@@ -33,14 +33,14 @@ export default function Navbar() {
     <>
       <header
         className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md" : "bg-transparent"
+          scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          {/* Logo */}
+          {/* Logo — always dark text for readability */}
           <Link
             href="/"
-            className="flex items-center gap-2 text-primary"
+            className="flex items-center gap-2 text-[#1E293B]"
             onClick={handleLinkClick}
           >
             <Image
@@ -51,14 +51,14 @@ export default function Navbar() {
               className="object-contain"
             />
             <div className="flex flex-col">
-              <span className="font-semibold text-primary">BenK Tech Labs</span>
-              <span className="hidden text-xs text-muted lg:block">
+              <span className="font-semibold text-[#1E293B]">BenK Tech Labs</span>
+              <span className="hidden text-xs text-[#64748B] lg:block">
                 Empowering Businesses with Smart Technology
               </span>
             </div>
           </Link>
 
-          {/* Desktop Nav Links - centre/right */}
+          {/* Desktop Nav Links — primary for text, accent for active/hover */}
           <div className="hidden items-center gap-8 md:flex">
             {navLinks.map(({ href, label }) => {
               const isActive =
@@ -68,20 +68,20 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`relative pb-1 text-sm font-medium transition-colors hover:text-accent ${
-                    scrolled ? "text-text" : "text-primary"
-                  } ${isActive ? "text-accent" : ""}`}
+                  className={`relative pb-1 text-sm font-medium transition-colors hover:text-[#F97316] ${
+                    isActive ? "text-[#F97316]" : "text-[#1E293B]"
+                  }`}
                 >
                   {label}
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#F97316]" />
                   )}
                 </Link>
               );
             })}
             <a
               href="/#enquiry-form"
-              className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary"
+              className="rounded-full bg-[#F97316] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#EA6C00]"
             >
               Get a Free Quote
             </a>
@@ -96,9 +96,9 @@ export default function Navbar() {
             aria-expanded={mobileOpen}
           >
             {mobileOpen ? (
-              <X className="h-6 w-6 text-primary" />
+              <X className="h-6 w-6 text-[#1E293B]" />
             ) : (
-              <Menu className="h-6 w-6 text-primary" />
+              <Menu className="h-6 w-6 text-[#1E293B]" />
             )}
           </button>
         </nav>

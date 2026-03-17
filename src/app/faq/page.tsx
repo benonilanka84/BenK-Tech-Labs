@@ -114,7 +114,7 @@ export default function FaqPage() {
       <section
         className="px-4 py-20 text-white"
         style={{
-          background: "linear-gradient(to bottom, #1E3A8A, #4F6FD4)",
+          background: "linear-gradient(to bottom, #0F172A, #1E293B)",
         }}
       >
         <div className="mx-auto max-w-4xl text-center">
@@ -152,7 +152,7 @@ export default function FaqPage() {
           </p>
           <Link
             href="/#enquiry-form"
-            className="mt-6 inline-block rounded-lg bg-accent px-8 py-3 font-semibold text-white transition-colors hover:bg-primary"
+            className="mt-6 inline-block rounded-lg bg-[#F97316] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#EA6C00]"
           >
             Get in Touch
           </Link>

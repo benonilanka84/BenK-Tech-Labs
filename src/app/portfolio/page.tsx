@@ -39,7 +39,7 @@ const placeholderCards = [
 export default function PortfolioPage() {
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-[#EEF2FF] via-[#EEF2FF] to-[#E0E7FF]"
+      className="min-h-screen bg-gradient-to-b from-[#F8FAFC] via-[#F8FAFC] to-[#F1F5F9]"
     >
       {/* PAGE HEADER */}
       <section className="px-4 pt-12 pb-8 sm:px-6 lg:px-8">
@@ -56,7 +56,7 @@ export default function PortfolioPage() {
       {/* THE BELIEVERSE — Featured case study card */}
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <article className="overflow-hidden rounded-xl border-l-4 border-teal bg-white shadow-md">
+          <article className="overflow-hidden rounded-xl border-l-4 border-[#F97316] bg-white shadow-md">
             <div className="p-6 md:p-8">
               <span className="mb-3 inline-block rounded-full bg-teal/15 px-3 py-1 text-xs font-semibold text-teal">
                 Full Stack Web Development
@@ -80,7 +80,7 @@ export default function PortfolioPage() {
                   href="https://www.thebelieverse.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-primary"
+                  className="rounded-lg bg-[#F97316] px-6 py-3 font-semibold text-white transition hover:bg-[#EA6C00]"
                 >
                   Visit thebelieverse.com →
                 </a>
@@ -98,15 +98,15 @@ export default function PortfolioPage() {
             {placeholderCards.map((card) => (
               <article
                 key={card.title}
-                className="rounded-xl border-2 border-dashed border-border bg-surface/60 p-6"
+                className="rounded-xl border-2 border-dashed border-[#E2E8F0] bg-[#F8FAFC]/60 p-6"
               >
-                <span className="inline-block rounded-full bg-muted/30 px-3 py-1 text-xs font-medium text-muted">
+                <span className="inline-block rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
                   {card.category}
                 </span>
                 <h3 className="mt-3 text-lg font-bold text-primary">
                   {card.title}
                 </h3>
-                <span className="mt-2 inline-block rounded-full border border-muted/50 bg-white/50 px-3 py-1 text-xs text-muted">
+                <span className="mt-2 inline-block rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-500">
                   {card.status}
                 </span>
               </article>
@@ -123,7 +123,7 @@ export default function PortfolioPage() {
           </p>
           <Link
             href="/#enquiry-form"
-            className="mt-4 inline-block rounded-lg bg-accent px-8 py-3 font-semibold text-white transition hover:bg-primary"
+            className="mt-4 inline-block rounded-lg bg-[#F97316] px-8 py-3 font-semibold text-white transition hover:bg-[#EA6C00]"
           >
             Start Your Project
           </Link>

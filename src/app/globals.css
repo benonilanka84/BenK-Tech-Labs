@@ -8,3 +8,8 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
+
+/* Body text — dark slate, never blue */
+body {
+  color: #334155;
+}

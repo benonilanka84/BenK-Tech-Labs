@@ -10,21 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E3A8A",
-        accent: "#4F6FD4",
-        accentLight: "#7B94E8",
+        primary: "#1E293B",
+        accent: "#F97316",
+        accentLight: "#FB923C",
         teal: {
-          DEFAULT: "#0D9488",
+          DEFAULT: "#14B8A6",
           50: "#f0fdfa",
           500: "#14b8a6",
-          600: "#0D9488",
+          600: "#0d9488",
           700: "#0f766e",
           800: "#115e59",
         },
-        surface: "#EEF2FF",
-        text: "#111827",
-        muted: "#6B7280",
-        border: "#C7D2FE",
+        surface: "#F8FAFC",
+        text: "#334155",
+        muted: "#64748B",
+        border: "#E2E8F0",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],

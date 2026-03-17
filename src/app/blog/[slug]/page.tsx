@@ -85,13 +85,13 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="prose prose-lg max-w-none prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline">
             <MDXRemote source={content} />
           </div>
-          <div className="mt-12 rounded-lg border-l-4 border-teal bg-surface p-6">
+          <div className="mt-12 rounded-lg border-l-4 border-[#14B8A6] bg-surface p-6">
             <p className="mb-4 font-semibold text-primary">
               Need help with {firstTag}? Let&apos;s talk.
             </p>
             <Link
               href="/#enquiry-form"
-              className="inline-flex items-center rounded-lg bg-accent px-6 py-2.5 font-semibold text-white transition hover:bg-accentLight"
+              className="inline-flex items-center rounded-lg bg-[#F97316] px-6 py-2.5 font-semibold text-white transition hover:bg-[#EA6C00]"
             >
               Get a Free Quote →
             </Link>

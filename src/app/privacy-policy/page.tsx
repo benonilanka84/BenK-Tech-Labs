@@ -20,7 +20,7 @@ const LAST_UPDATED = "2025-03-16";
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-surface">
+        <div className="min-h-screen bg-[#F8FAFC]">
       <article className="mx-auto max-w-3xl px-4 py-16">
         <header className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-primary md:text-5xl">

@@ -33,7 +33,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-[#0F172A] text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Logo, tagline, social */}
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Column 2: Services */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[#14B8A6]">
               Services
             </h3>
             <ul className="space-y-2">
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="text-sm text-white/80 transition-colors hover:text-white"
+                    className="text-sm text-slate-300 transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
 
           {/* Column 3: Company */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[#14B8A6]">
               Company
             </h3>
             <ul className="space-y-2">
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="text-sm text-white/80 transition-colors hover:text-white"
+                    className="text-sm text-slate-300 transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
 
           {/* Column 4: Contact, location, MSME badge */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[#14B8A6]">
               Contact
             </h3>
             <div className="space-y-3 text-sm text-white/80">
@@ -123,7 +123,7 @@ export default function Footer() {
                 Vijayawada, Andhra Pradesh, India
               </p>
               <div className="pt-2">
-                <span className="inline-flex items-center rounded-md bg-teal-600 px-2 py-1 text-xs font-medium text-white">
+                <span className="inline-flex items-center rounded-md bg-[#14B8A6] px-2 py-1 text-xs font-medium text-white">
                   MSME Registered
                 </span>
               </div>
@@ -132,7 +132,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/20 pt-8 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm text-white/70">
             © {new Date().getFullYear()} BenK Tech Labs. All rights reserved.
           </p>

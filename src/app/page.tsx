@@ -145,7 +145,12 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative flex min-h-[85vh] flex-col items-center justify-center bg-gradient-to-b from-primary to-accent px-4 py-12 text-center">
+      <section
+        className="relative flex min-h-[85vh] flex-col items-center justify-center px-4 py-12 text-center"
+        style={{
+          background: "linear-gradient(to bottom, #0F172A, #1E293B)",
+        }}
+      >
         <h1 className="sr-only">
           Digital Services Company in Vijayawada | Web, App & AI Solutions
         </h1>
@@ -178,28 +183,36 @@ export default function Home() {
           >
             <a
               href="#enquiry-form"
-              className="rounded-lg bg-accent px-8 py-4 font-semibold text-white transition hover:bg-accentLight"
+              className="rounded-lg bg-[#F97316] px-8 py-4 font-semibold text-white transition hover:bg-[#EA6C00]"
             >
               Start Your Project
             </a>
             <Link
               href="/portfolio"
-              className="rounded-lg border-2 border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-primary"
+              className="rounded-lg border-2 border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#1E293B]"
             >
               View Our Work
             </Link>
           </motion.div>
-            <motion.div
+          <motion.div
             custom={3}
             variants={heroVariants}
             initial="hidden"
             animate="visible"
             className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-white"
           >
-            <span className="rounded-md bg-teal-600 px-2.5 py-1 font-medium text-white">✓ MSME Registered</span>
-            <span>✓ 5+ Years Experience</span>
-            <span>✓ 50+ Projects Delivered</span>
-            <span>✓ India-wide Clients</span>
+            <span className="rounded-md bg-[#14B8A6] px-2.5 py-1 font-medium text-white">
+              ✓ MSME Registered
+            </span>
+            <span className="rounded-full bg-white/10 px-2.5 py-1">
+              ✓ 5+ Years Experience
+            </span>
+            <span className="rounded-full bg-white/10 px-2.5 py-1">
+              ✓ 50+ Projects Delivered
+            </span>
+            <span className="rounded-full bg-white/10 px-2.5 py-1">
+              ✓ India-wide Clients
+            </span>
           </motion.div>
         </div>
       </section>
@@ -207,19 +220,19 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <section id="services" className="bg-white px-4 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-4 text-center text-3xl font-bold text-primary md:text-4xl">
+          <h2 className="mb-4 text-center text-3xl font-bold text-[#1E293B] md:text-4xl">
             Our Core Services
           </h2>
-          <p className="mb-12 text-center text-muted">
+          <p className="mb-12 text-center text-[#334155]">
             Everything your business needs to grow digitally — under one roof.
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Code2 className="mb-4 h-10 w-10 text-[#4F6FD4]" />
-              <h3 className="mb-2 font-bold text-primary">
+            <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 shadow-sm transition-shadow hover:border-t-4 hover:border-t-[#2563EB] hover:shadow-md">
+              <Code2 className="mb-4 h-10 w-10 text-[#2563EB]" />
+              <h3 className="mb-2 font-bold text-[#1E293B]">
                 Custom Web Applications Built for Scale
               </h3>
-              <p className="mb-4 text-sm text-muted">
+              <p className="mb-4 text-sm text-[#334155]">
                 From marketing websites to complex SaaS platforms — fast,
                 secure, and scalable using Next.js, React, Node.js, and
                 PostgreSQL.
@@ -229,7 +242,7 @@ export default function Home() {
                   (tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-surface px-2 py-1 text-xs text-accent"
+                      className="rounded-full bg-[#F8FAFC] px-2 py-1 text-xs text-[#2563EB]"
                     >
                       {tag}
                     </span>
@@ -238,12 +251,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Smartphone className="mb-4 h-10 w-10 text-teal-600" />
-              <h3 className="mb-2 font-bold text-primary">
+            <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 shadow-sm transition-shadow hover:border-t-4 hover:border-t-[#7C3AED] hover:shadow-md">
+              <Smartphone className="mb-4 h-10 w-10 text-[#7C3AED]" />
+              <h3 className="mb-2 font-bold text-[#1E293B]">
                 Android & iOS Apps That Users Love
               </h3>
-              <p className="mb-4 text-sm text-muted">
+              <p className="mb-4 text-sm text-[#334155]">
                 Cross-platform mobile apps using React Native and Flutter — from
                 MVP to Play Store and App Store.
               </p>
@@ -252,7 +265,7 @@ export default function Home() {
                   (tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-surface px-2 py-1 text-xs text-accent"
+                      className="rounded-full bg-[#F8FAFC] px-2 py-1 text-xs text-[#7C3AED]"
                     >
                       {tag}
                     </span>
@@ -261,12 +274,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <Bot className="mb-4 h-10 w-10 text-[#4F6FD4]" />
-              <h3 className="mb-2 font-bold text-primary">
+            <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 shadow-sm transition-shadow hover:border-t-4 hover:border-t-[#14B8A6] hover:shadow-md">
+              <Bot className="mb-4 h-10 w-10 text-[#14B8A6]" />
+              <h3 className="mb-2 font-bold text-[#1E293B]">
                 Automate Your Business With Intelligent AI
               </h3>
-              <p className="mb-4 text-sm text-muted">
+              <p className="mb-4 text-sm text-[#334155]">
                 LLMs, workflow automation, and custom ML pipelines integrated
                 into your existing systems.
               </p>
@@ -275,7 +288,7 @@ export default function Home() {
                   (tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-surface px-2 py-1 text-xs text-accent"
+                      className="rounded-full bg-[#F8FAFC] px-2 py-1 text-xs text-[#14B8A6]"
                     >
                       {tag}
                     </span>
@@ -284,12 +297,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-              <TrendingUp className="mb-4 h-10 w-10 text-teal-600" />
-              <h3 className="mb-2 font-bold text-primary">
+            <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 shadow-sm transition-shadow hover:border-t-4 hover:border-t-[#F97316] hover:shadow-md">
+              <TrendingUp className="mb-4 h-10 w-10 text-[#F97316]" />
+              <h3 className="mb-2 font-bold text-[#1E293B]">
                 More Visibility. More Leads. More Revenue.
               </h3>
-              <p className="mb-4 text-sm text-muted">
+              <p className="mb-4 text-sm text-[#334155]">
                 Data-driven SEO, Google Ads, Meta Ads, and social media
                 management that turns clicks into customers.
               </p>
@@ -298,7 +311,7 @@ export default function Home() {
                   (tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-surface px-2 py-1 text-xs text-accent"
+                      className="rounded-full bg-[#F8FAFC] px-2 py-1 text-xs text-[#F97316]"
                     >
                       {tag}
                     </span>
@@ -313,17 +326,17 @@ export default function Home() {
       {/* WHY CHOOSE US SECTION */}
       <section className="bg-[#EEF2FF] px-4 py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#1E293B] md:text-4xl">
             Why Businesses Choose BenK Tech Labs
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex gap-4">
-              <Layers className="h-8 w-8 flex-shrink-0 text-teal-600" />
+              <Layers className="h-8 w-8 flex-shrink-0 text-[#14B8A6]" />
               <div>
-                <h3 className="font-bold text-primary">
+                <h3 className="font-bold text-[#1E293B]">
                   End-to-End Capability
                 </h3>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-1 text-sm text-[#334155]">
                   One partner for web, app, AI, and marketing — no coordination
                   overhead.
                 </p>
@@ -331,12 +344,12 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Globe className="h-8 w-8 flex-shrink-0 text-teal-600" />
+              <Globe className="h-8 w-8 flex-shrink-0 text-[#14B8A6]" />
               <div>
-                <h3 className="font-bold text-primary">
+                <h3 className="font-bold text-[#1E293B]">
                   India-Rooted, Global-Ready
                 </h3>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-1 text-sm text-[#334155]">
                   Registered Indian company, fluent in local business needs and
                   global tech standards.
                 </p>
@@ -344,12 +357,12 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Receipt className="h-8 w-8 flex-shrink-0 text-teal-600" />
+              <Receipt className="h-8 w-8 flex-shrink-0 text-[#14B8A6]" />
               <div>
-                <h3 className="font-bold text-primary">
+                <h3 className="font-bold text-[#1E293B]">
                   Transparent Pricing
                 </h3>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-1 text-sm text-[#334155]">
                   Itemised quotations, milestone-based billing, no hidden
                   charges.
                 </p>
@@ -357,12 +370,12 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <Zap className="h-8 w-8 flex-shrink-0 text-teal-600" />
+              <Zap className="h-8 w-8 flex-shrink-0 text-[#14B8A6]" />
               <div>
-                <h3 className="font-bold text-primary">
+                <h3 className="font-bold text-[#1E293B]">
                   Agile Delivery
                 </h3>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-1 text-sm text-[#334155]">
                   Sprint-based development with weekly updates and live staging
                   environments.
                 </p>
@@ -370,12 +383,12 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4 md:col-span-2 md:justify-center">
-              <Headphones className="h-8 w-8 flex-shrink-0 text-teal-600" />
+              <Headphones className="h-8 w-8 flex-shrink-0 text-[#14B8A6]" />
               <div>
-                <h3 className="font-bold text-primary">
+                <h3 className="font-bold text-[#1E293B]">
                   Post-Launch Support
                 </h3>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-1 text-sm text-[#334155]">
                   30-day free support on every project. Monthly retainer options
                   available.
                 </p>
@@ -391,7 +404,7 @@ export default function Home() {
           <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
             Our Work
           </h2>
-          <div className="mb-8 rounded-xl border-l-4 border-teal bg-surface p-6 shadow-sm transition-shadow hover:shadow-md">
+          <div className="mb-8 rounded-xl border-l-4 border-[#F97316] bg-[#F8FAFC] p-6 shadow-sm transition-shadow hover:shadow-md">
             <span className="mb-2 inline-block rounded-full bg-teal/10 px-3 py-1 text-xs font-medium text-teal">
               Full Stack Web Development
             </span>
@@ -425,8 +438,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF SECTION */}
-      <section className="bg-[#1E3A8A] px-4 py-20 text-white">
+      {/* STATS BAR + TESTIMONIALS — single dark section */}
+      <section className="bg-[#0F172A] px-4 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <div
             ref={statsRef}
@@ -444,7 +457,7 @@ export default function Home() {
                 transition={{ delay: i * 0.1, duration: 0.4 }}
                 className="text-center"
               >
-                <div className="text-3xl font-bold text-teal-600 md:text-4xl">
+                <div className="text-3xl font-bold text-[#14B8A6] md:text-4xl">
                   {stat.value}
                 </div>
                 <div className="text-sm text-white/80">{stat.label}</div>
@@ -455,15 +468,15 @@ export default function Home() {
             {testimonials.map((t) => (
               <div
                 key={t.author}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 shadow-sm"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 shadow-sm backdrop-blur-sm"
               >
-                <Quote className="mb-3 h-8 w-8 text-teal-600" />
-                <p className="mb-4 text-white/90">&ldquo;{t.quote}&rdquo;</p>
+                <Quote className="mb-3 h-8 w-8 text-[#14B8A6]" />
+                <p className="mb-4 text-white">&ldquo;{t.quote}&rdquo;</p>
                 <div className="mb-2 flex gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-4 w-4 fill-amber-400 text-amber-400"
+                      className="h-4 w-4 fill-[#F97316] text-[#F97316]"
                     />
                   ))}
                 </div>
@@ -478,7 +491,7 @@ export default function Home() {
       {/* ENQUIRY FORM */}
       <section
         id="enquiry-form"
-        className="bg-[#EEF2FF] px-4 py-20"
+        className="bg-[#F8FAFC] px-4 py-20"
       >
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-12 text-center text-3xl font-bold text-primary md:text-4xl">
@@ -509,7 +522,7 @@ export default function Home() {
                     type="text"
                     value={formData.fullName}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   />
                   {errors.fullName && (
                     <p className="mt-1 text-sm text-red-500">
@@ -556,7 +569,7 @@ export default function Home() {
                     type="email"
                     value={formData.email}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -575,7 +588,7 @@ export default function Home() {
                     type="text"
                     value={formData.company}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   />
                 </div>
               </div>
@@ -592,7 +605,7 @@ export default function Home() {
                     name="serviceRequired"
                     value={formData.serviceRequired}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   >
                     <option value="">Select...</option>
                     <option value="Web Development">Web Development</option>
@@ -619,7 +632,7 @@ export default function Home() {
                     name="projectBudget"
                     value={formData.projectBudget}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   >
                     <option value="">Select...</option>
                     <option value="Under ₹50K">Under ₹50K</option>
@@ -649,7 +662,7 @@ export default function Home() {
                     rows={4}
                     minLength={20}
                     placeholder="Tell us about your project (min 20 characters)"
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -668,7 +681,7 @@ export default function Home() {
                     name="howDidYouHear"
                     value={formData.howDidYouHear}
                     onChange={handleFormChange}
-                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                    className="w-full rounded-lg border border-border px-4 py-2.5 text-text focus:border-[#F97316] focus:outline-none focus:ring-2 focus:ring-[#F97316]"
                   >
                     <option value="">Select...</option>
                     <option value="Google">Google</option>

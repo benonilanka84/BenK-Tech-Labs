@@ -52,7 +52,7 @@ function PostCard({ post }: { post: BlogPost }) {
             </h3>
           </div>
         )}
-        <span className="absolute left-3 top-3 rounded-full bg-teal-50 px-2.5 py-1 text-xs font-medium text-teal-700 backdrop-blur-sm">
+        <span className="absolute left-3 top-3 rounded-full bg-orange-50 px-2.5 py-1 text-xs font-medium text-orange-700 backdrop-blur-sm">
           {categoryTag}
         </span>
       </div>

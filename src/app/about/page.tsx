@@ -55,7 +55,7 @@ export default function AboutPage() {
       <section
         className="px-4 py-20 text-white"
         style={{
-          background: "linear-gradient(to bottom, #1E3A8A, #4F6FD4)",
+          background: "linear-gradient(to bottom, #0F172A, #1E293B)",
         }}
       >
         <div className="mx-auto max-w-4xl text-center">
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 key={title}
                 className="rounded-xl border border-border bg-surface p-6 shadow-sm"
               >
-                <Icon className="mb-3 h-10 w-10 text-[#0D9488]" />
+                <Icon className="mb-3 h-10 w-10 text-[#14B8A6]" />
                 <h3 className="mb-2 font-bold text-primary">{title}</h3>
                 <p className="text-muted">{description}</p>
               </div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl text-center">
           <div
             className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-white"
-            style={{ backgroundColor: "#0D9488" }}
+            style={{ backgroundColor: "#14B8A6" }}
           >
             <Check className="h-5 w-5" />
             <span className="font-semibold">MSME Registered</span>
@@ -152,7 +152,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section
         className="px-4 py-20 text-center text-white"
-        style={{ backgroundColor: "#1E3A8A" }}
+        style={{ backgroundColor: "#0F172A" }}
       >
         <div className="mx-auto max-w-2xl">
           <h2 className="text-2xl font-bold md:text-3xl">
@@ -160,7 +160,7 @@ export default function AboutPage() {
           </h2>
           <Link
             href="/#enquiry-form"
-            className="mt-6 inline-block rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A8A] transition hover:bg-white/90"
+            className="mt-6 inline-block rounded-lg bg-[#F97316] px-8 py-4 font-semibold text-white transition hover:bg-[#EA6C00]"
           >
             Start Your Project
           </Link>
