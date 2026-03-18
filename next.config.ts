@@ -26,6 +26,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   transpilePackages: ["next-mdx-remote"],
+  experimental: {
+    optimizePackageImports: ["framer-motion", "lucide-react"],
+  },
   async headers() {
     return [
       {

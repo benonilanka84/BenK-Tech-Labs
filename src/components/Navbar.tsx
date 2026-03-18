@@ -48,6 +48,7 @@ export default function Navbar() {
               alt="BenK Tech Labs Logo"
               width={40}
               height={40}
+              priority
               className="object-contain"
             />
             <div className="flex flex-col">

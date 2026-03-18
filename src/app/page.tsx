@@ -27,10 +27,37 @@ const heroVariants = {
   }),
 };
 
+const stats = [
+  { value: "50+", label: "Projects" },
+  { value: "30+", label: "Happy Clients" },
+  { value: "5+", label: "Years" },
+  { value: "4", label: "States Served" },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Their team delivered our e-commerce platform in 6 weeks — fast, beautiful, and ranking on Page 1.",
+    author: "Retail Client",
+    location: "Hyderabad",
+  },
+  {
+    quote:
+      "Their AI automation saved our team 20 hours per week. ROI visible within the first month.",
+    author: "Healthcare Startup",
+    location: "Bangalore",
+  },
+  {
+    quote:
+      "Professional, on-time, and genuinely invested in our success. Highly recommend.",
+    author: "Education Platform",
+    location: "Vijayawada",
+  },
+];
+
 export default function Home() {
   const statsRef = useRef<HTMLDivElement>(null);
   const statsInView = useInView(statsRef, { once: true });
-
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -113,34 +140,6 @@ export default function Home() {
       setSubmitError("Something went wrong. Please try again or email us at contact@benktechlabs.com.");
     }
   };
-
-  const stats = [
-    { value: "50+", label: "Projects" },
-    { value: "30+", label: "Happy Clients" },
-    { value: "5+", label: "Years" },
-    { value: "4", label: "States Served" },
-  ];
-
-  const testimonials = [
-    {
-      quote:
-        "Their team delivered our e-commerce platform in 6 weeks — fast, beautiful, and ranking on Page 1.",
-      author: "Retail Client",
-      location: "Hyderabad",
-    },
-    {
-      quote:
-        "Their AI automation saved our team 20 hours per week. ROI visible within the first month.",
-      author: "Healthcare Startup",
-      location: "Bangalore",
-    },
-    {
-      quote:
-        "Professional, on-time, and genuinely invested in our success. Highly recommend.",
-      author: "Education Platform",
-      location: "Vijayawada",
-    },
-  ];
 
   return (
     <>
@@ -438,7 +437,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS BAR + TESTIMONIALS — single dark section */}
+      {/* STATS BAR + TESTIMONIALS */}
       <section className="bg-[#0F172A] px-4 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <div
