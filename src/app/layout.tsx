@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "BenK Tech Labs",
   },
+  verification: {
+    google: "BqAmQxPI5ncclY0deQInKADUPS4IQmkTgqZpaZT8Zkg",
+  },
 };
 
 const localBusinessSchema = {
