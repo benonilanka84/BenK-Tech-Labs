@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/terms`,
     siteName: "BenK Tech Labs",
   },
+  alternates: {
+    canonical: "https://www.benktechlabs.com/terms",
+  },
 };
 
 const LAST_UPDATED = "2025-03-16";

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/blog`,
     siteName: "BenK Tech Labs",
   },
+  alternates: {
+    canonical: "https://www.benktechlabs.com/blog",
+  },
 };
 
 function PostCard({ post }: { post: BlogPost }) {

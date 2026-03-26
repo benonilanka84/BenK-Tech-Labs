@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/portfolio`,
     siteName: "BenK Tech Labs",
   },
+  alternates: {
+    canonical: "https://www.benktechlabs.com/portfolio",
+  },
 };
 
 const placeholderCards = [

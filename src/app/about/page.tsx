@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/about`,
     siteName: "BenK Tech Labs",
   },
+  alternates: {
+    canonical: "https://www.benktechlabs.com/about",
+  },
 };
 
 const missionValues = [

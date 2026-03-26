@@ -3,16 +3,19 @@ import type { Metadata } from "next";
 const SITE_URL = "https://benktechlabs.com";
 
 export const metadata: Metadata = {
-  title: "FAQs | BenK Tech Labs — Frequently Asked Questions",
+  title: "FAQ | BenK Tech Labs — Common Questions Answered",
   description:
-    "Got questions about working with BenK Tech Labs? Find answers about our web development, app development, AI automation, and digital marketing services.",
+    "Frequently asked questions about BenK Tech Labs services — timelines, pricing, technologies, support & more. Vijayawada digital agency.",
   openGraph: {
-    title: "FAQs | BenK Tech Labs — Frequently Asked Questions",
+    title: "FAQ | BenK Tech Labs — Common Questions Answered",
     description:
-      "Got questions about working with BenK Tech Labs? Find answers about our web development, app development, AI automation, and digital marketing services.",
+      "Frequently asked questions about BenK Tech Labs services — timelines, pricing, technologies, support & more. Vijayawada digital agency.",
     type: "website",
     url: `${SITE_URL}/faq`,
     siteName: "BenK Tech Labs",
+  },
+  alternates: {
+    canonical: "https://www.benktechlabs.com/faq",
   },
 };
 
@@ -21,5 +24,5 @@ export default function FaqLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return children;
 }
